@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+</head>
+<body>
+    <!-- <h1>this is contact page</h1>
+    <a href="https://www.mindrisers.com.np/" target="_blank">Link to visit website</a>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum ipsum, ducimus porro minus obcaecati praesentium provident dolores delectus fugit, aspernatur dolore consequatur neque. Ipsa aspernatur dolorem iusto quasi labore consectetur.</p>
+   -->
+    <!-- form and inputs -->
+     <fieldset>
+        <legend>Personal information</legend>
+        <form action="mailto:inimaharjan@gmail.com" 
+        enctype="text/plain" method="post">
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" 
+                required placeholder="">
+            </p>
+            <p>
+                <label for="username">Username</label>
+                <input type="text" id="username">
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input type="password" id="password">
+            </p>
+            <p>
+                <h3>Select your gender</h3>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="dance">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="dance">
+            </p>
+            <p>
+                <h3>Select your habit</h3>
+                <label for="dance">Dance</label>
+                <input type="checkbox" name="habit" id="dance" value="dance">
+                <label for="sing">Sing</label>
+                <input type="checkbox" name="habit" id="sing" value="sing">
+            </p>
+            <p>
+                <h3>Date of join</h3>
+                <input type="date" name="date" id="date">
+            </p>
+            <p>
+                <textarea name="msg" id="msg" 
+                placeholder="Type a message"></textarea>
+            </p>
+            <p>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </p>
+         </form>
+     </fieldset>
+</body>
+</html>
