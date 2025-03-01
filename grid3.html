@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            padding: 10px;
+            background-color: black;
+            height: 100%;
+            width: auto;
+        }
+        .grid-box {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 200px 1fr 1fr;
+            grid-template-rows: 50px 300px 30px;
+            grid-template-areas: 
+                "header header1 header2"
+                "nav main subcontent"
+                "footer footer1 footer2";
+        }
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+        }
+        .header {
+            background-color: blue;
+            grid-area: header;
+        }
+        .header1 {
+            background-color: blue;
+            grid-area: header1;
+        }
+        .header2 {
+            background-color: blue;
+            grid-area: header2;
+        }
+        .nav {
+            background-color: skyblue;
+            grid-area: nav;
+        }
+        .main {
+            background-color: purple;
+            grid-area: main;
+        }
+        .subcontent {
+            background-color: pink;
+            grid-area: subcontent;
+        }
+        .footer {
+            background-color: orangered;
+            grid-area: footer;
+        }
+        .footer1 {
+            background-color: orangered;
+            grid-area: footer1;
+        }
+        .footer2 {
+            background-color: orangered;
+            grid-area: footer2;
+        }
+        /* tablet devices */
+        @media(max-width: 800px){
+            .grid-box {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 50px 150px 150px 50px ;
+            grid-template-areas: 
+                "header header1"
+                "nav main"
+                "nav subcontent"
+                "footer footer1";
+        } 
+        }
+        
+        /* mobile devices */
+        @media(max-width: 300px){
+            .grid-box {
+            display: grid;
+            gap: 10px;
+            /* grid-template-columns: 200px 1fr; */
+            grid-template-rows: 50px 40px 100px 150px 50px;
+            grid-template-areas: 
+                "header"
+                "nav"
+                "main"
+                "subcontent"
+                "footer";
+        } 
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="grid-box">
+            <div class="header item">
+                <h4>Header</h4>
+            </div>
+            <div class="header1 item">
+                <h4>Header</h4>
+            </div>
+            <div class="header2 item">
+                <h4>Header</h4>
+            </div>
+            <div class="nav item">
+                <h4>Nav</h4>
+            </div>
+            <div class="main item">
+                <h4>Main</h4>
+            </div>
+            <div class="subcontent item">
+                <h4>Subcontent</h4>
+            </div>
+            <div class="footer item">
+                <h4>Footer</h4>
+            </div>
+            <div class="footer1 item">
+                <h4>Footer</h4>
+            </div>
+            <div class="footer2 item">
+                <h4>Footer</h4>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

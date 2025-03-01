@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex css</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 10px;
+        }
+        main{
+            max-width: 600px;
+            border: 1px solid black;
+            display: grid;
+            /* flex-wrap: wrap; */
+            grid-template-rows: 200px 200px 150px;
+            grid-template-columns: 200px 200px 200px;
+            /* flex-direction: flex; */
+            /* align-items: center; */
+            /* height: 200px; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* justify-content: space-between; */
+            /* justify-content: end;
+            gap: 10px; */
+        }
+        span {
+        background-color: red;
+      }
+        /* .item{
+            flex-basis: 200px;
+            flex-grow: 1;
+            flex-shrink: 0;
+            justify-content: end;
+            gap: 10px;
+        } */
+        .bx1{
+            background-color: rgb(98, 126, 151);
+            /* height: 200px; */
+            /* flex-grow: 1;
+            flex-basis: 100px;
+            flex-shrink: 0; */
+            /* align-self: flex-end; */
+            /* order: 3; */
+        }
+        .bx2{
+            background-color: lightcoral;
+            /* flex-grow: 2; */
+            /* flex-basis: 200px; */
+            /* order: 4; */
+        }
+        .bx3{
+            background-color:bisque;
+            /* flex-basis: 200px; */
+            /* order: 7; */
+        }
+        .bx4{
+            background-color: blue;
+            /* order: 2; */
+        }
+        .bx5{
+            background-color: brown;
+            /* order: 1; */
+        }
+        .bx6{
+            background-color: blueviolet;
+            /* order: 6; */
+        }
+    </style>
+</head>
+<body>
+<h1>Flex CSS</h1>
+<main>
+    <span>
+        <h1>helo</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque est ipsum obcaecati distinctio molestias a eaque, sint, inventore iste ipsam consectetur eum non consequatur aliquam debitis tempora quibusdam porro delectus.</p>
+    </span>
+
+<!-- .bx$*7>h3{bx$} -->
+<div class="bx1 item">
+    <h3>hello</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, ipsa. Alias doloribus quo dolorem expedita? Numquam, nemo tempora corrupti incidunt, placeat labore officiis minima cupiditate fugiat quas pariatur ipsum porro!</p>
+ </div>
+ <div class="bx2 item">
+    <h3>canon</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur voluptatum, hic voluptate aut rem eos aperiam? Iste, nobis perferendis fugit nisi magnam culpa iusto unde, quidem praesentium fugiat alias necessitatibus!</p>
+ </div>
+ <div class="bx3 item">
+    <h3>bx3</h3>
+ </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 10px;
+        }
+        .item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .grid-box{
+            display: grid;
+            place-content: center;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 100px 200px 50px 70px 100px;
+            grid-template-areas: 
+            "header menu menu menu"
+            "hero hero hero hero"
+            "main main main image"
+            "main main main extra"
+            "banner banner banner banner";
+        }
+        .header{
+            background-color: rgb(146, 111, 111);
+            grid-area: header;
+        }
+        .menu{
+            background-color: red;
+            grid-area: menu;
+        }
+        .hero{
+            background-color: blue;
+            grid-area: hero;
+        }
+        .main{
+            background-color: rgb(74, 58, 58);
+            grid-area: main;
+        }
+        .banner{
+            background-color: yellow;
+            grid-area: banner;
+        }
+        .extra{
+            background-color: green;
+            grid-area: extra;
+        }
+        .image{
+            background-color: rgb(168, 168, 244);
+            grid-area: image;
+        }
+        /* tablet */
+        @media(max-width: 800px){
+            .grid-box{
+            display: grid;
+            place-content: center;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 100px 200px 50px 70px 100px;
+            grid-template-areas: 
+            "header header header"
+            "hero hero hero"
+            "menu main main"
+            "menu banner banner"
+            "menu extra image";
+        }
+        }
+        /* mobile */
+        @media(max-width: 600px){
+            .grid-box{
+            display: grid;
+            place-content: center;
+            grid-template-columns: 1fr;
+            grid-template-rows: 100px 200px 50px 70px 100px;
+            grid-template-areas: 
+            "header"
+            "menu"
+            "hero"
+            "main"
+            "banner"
+            "extra"
+            "image";
+        }
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="grid-box">
+            <div class="header item">
+                <h3>Header</h3>
+            </div>
+            <div class="menu item">
+                <h3>Menu</h3>
+            </div>
+            <div class="hero item">
+                <h3>Hero</h3>
+            </div>
+            <div class="main item">
+                <h3>Main</h3>
+            </div>
+            <div class="banner item">
+                <h3>banner</h3>
+            </div>
+            <div class="extra item">
+                <h3>extra</h3>
+            </div>
+            <div class="image item">
+                <h3>image</h3>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

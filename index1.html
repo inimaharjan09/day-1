@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web CSS</title>
+    <style>
+         .bx>h1{
+            color: blue;
+         }
+         .c-bx{
+            color: red;
+         }
+         li:nth-child(2n+1){
+            color: red;
+         }
+         button:hover{
+            color: brown;
+            background-color: yellow;
+         }
+         p::before{
+            content: 'hello';
+            color: purple;
+         }
+         p::after{
+            content: 'canon';
+            color: blueviolet;
+         }
+         input:focus{
+            color: red;
+         }
+         img[alt='image2']{
+            width: 300px;
+         }
+         input[type='email']:focus{
+            background-color: blue;
+         }
+    </style>
+</head>
+
+<body>
+    <div class="bx">
+        <h1>Hello INIMA</h1>
+        <div class="c-bx">
+            <h1>Hello Canon</h1>
+        </div>
+    </div>
+    <input type="text" placeholder="username">
+    <button>view more</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sint ut earum reprehenderit, saepe obcaecati iusto facere culpa vero maxime vitae corporis ratione sit perferendis nihil velit itaque porro quidem.</p>
+    <ol>
+        <li>jorem abcde</li>
+        <li>jorem xyz</li>
+        <li>jorem anbdjs</li>
+    </ol>
+    <br>
+    <input type="text">
+    <input type="email"><br>
+    <br>
+    <img src="https://images.unsplash.com/photo-1739641375724-dfea74e0df69?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image1" height="200">
+    <img src="https://images.unsplash.com/photo-1739532049391-2867bd1a71e8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image2" height="200">
+</body>
+</html>

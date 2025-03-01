@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* body{
+            padding: 0px;
+        }
+        .bx{
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            background-color: rgb(211, 123, 123);
+            transition: all 500ms ease-in-out 0s;
+            overflow: hidden;
+
+        }
+        .bx:hover {
+            width: 400px;
+            transform: rotate(360deg);
+        }
+        img{
+            width: 100%;
+            transition: all 500ms cubic-bezier(0.895, 0.03, 0.685, 0.22) 0s;
+        }
+        img:hover{
+            transform: scale();
+        } */
+        .bx {
+        height: 200px;
+        width: 200px;
+        background-color: black;
+        animation: animate 5s cubic-bezier(0.95, 0.05, 0.795, 0.035) 0s infinite alternate both;
+      }
+        @keyframes animate {
+        10% {
+          background-color: red;
+        }
+        50% {
+          background-color: yellow;
+          transform: rotate(45deg);
+        }
+        70% {
+          /* transform: translateX(120px) translateY(100px); */
+        }
+        100% {
+          background-color: green;
+        }
+      }
+    </style>
+</head>
+<body>
+    <div class="bx">
+        <!-- <img src="https://images.unsplash.com/photo-1739673370222-27fba894b50b?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+        alt=""> -->
+    </div>
+    </body>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid CSS</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .c-bx {
+            height: 600px;
+            width: 600px;
+            background-color: aquamarine;
+            position: relative;
+        }
+        .bx {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            /* margin: 3px; */
+            /* border: 3px solid black; */
+            position: relative;
+        }
+        .bx1 {
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            margin-left: 200px;
+            position: relative;
+        }
+        .bx2 {
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            /* margin-left: 400px; */
+            position: absolute;
+            left: 400px; /* Changed from margin-left to left */
+            top: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="c-bx">
+        <div class="bx"></div>
+        <div class="bx1"></div>
+        <div class="bx2"></div>
+    </div>
+</body>
+</html>

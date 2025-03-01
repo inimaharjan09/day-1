@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Card</title>
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .bx{
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        img{
+            filter: grayscale(50%) blur(0px) brightness(90%);
+            height: 200px;
+            width: 300px;
+            object-fit: cover;
+        }
+        .bx h3{
+            margin: 10px;
+            text-align: center;
+            color: pink;
+        }
+        .bx h1{
+            text-align: center;
+        }
+        .bx p{
+            margin: 20px;
+            text-align: center;
+        } */
+         /* styles.css */
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+}
+
+.card {
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-image {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+}
+
+.read-more {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.read-more:hover {
+    background: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <!-- <div class="bx">
+        <div>
+            <img src="https://images.unsplash.com/photo-1735825764457-ffdf0b5aa5dd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="">
+        <br>
+        <h3>4 days ago</h3>
+        <h1>Post One</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, earum quasi. Officia molestiae consequuntur alias quam, sit ullam? Ipsum voluptas aspernatur exercitationem error vel voluptatum voluptates cum aliquam quaerat minima.</p>
+        </div>
+    </div> -->
+
+<div class="card-container">
+    <div class="card">
+        <div class="card-image" style="background-image: url('/images/1.jpg');"></div>
+        <div class="card-content">
+            <h2>Nikola Tesla</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis odio illo facere nisi, sapiente consequatur eveniet quos voluptas deleniti? Quos expedita, libero omnis accusamus aspernatur quibusdam voluptates consequatur repellat corporis.</p>
+            <button class="read-more">READ MORE</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-image" style="background-image: url('/images/2.jpg');"></div>
+        <div class="card-content">
+            <h2>Ernest Hemingway</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nam obcaecati dolorem numquam laudantium tempora quam repudiandae, harum corrupti? Delectus quibusdam dolorum iste maxime perferendis beatae dignissimos fugit dicta! Excepturi!</p>
+            <button class="read-more">READ MORE</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-image" style="background-image: url('/images/3.jpg');"></div>
+        <div class="card-content">
+            <h2>J. R. R. Tolkien</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem dicta dolorum itaque consequuntur veniam expedita, nemo odio. Error reprehenderit quae non, debitis est molestias? Repudiandae rem dignissimos aut iure odio.</p>
+            <button class="read-more">READ MORE </button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
