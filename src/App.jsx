@@ -1,23 +1,45 @@
-import React from "react";
-import { posts } from "./data/data";
-import PostCard from "./components/PostCard";
+import React from 'react'
+import { createBrowserRouter } from 'react-router'
+import { RouterProvider } from 'react-router-dom';
+import Home from './pages/home/Home';
+import About from './pages/about/About';
+import Contact from './pages/contact/Contact';
+import RootLayout from './components/RootLayout';
+import NotFound from './pages/NotFound';
 
 export default function App() {
-  // const person = {
-  //   address: {
-  //     primary: 'new road',
-  //     secondary:'indrachowk'
-  //   }
-  // };
-  // const { address: {primary, secondary}}=person;
-  
-  return(
-    <div className="p-5 flex flex-wrap gap-5 justify-center">
-      {/* <PostCard /> */}
-      {posts.map((post)=> {
-        return <PostCard key={post.id} post={post} />
-      })}
-      
-    </div>
-  )
+
+  const router = createBrowserRouter([
+
+    {
+      path: '/',
+      element: <RootLayout />,
+      children: [
+        {
+          index: true,
+          element: <Home />,
+        },
+        {
+          path: 'about',
+          element: <About />
+        },
+        {
+          path: 'contact',
+          element: <Contact />
+        },
+
+      ]
+    },
+    {
+      path: '*',
+      element: <NotFound />
+    }
+
+
+
+  ]);
+
+
+
+  return <RouterProvider router={router} />
 }

@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+@theme {
+    --color-primary:red;
+    --color-buttonColor: green;
+    --text-headLarge:50px;
+
+    --animate-myAni: ani 2s ease-in infinite;
+
+    --my-grid: repeat(auto-fit, minmax(250px, 1fr));
+
+    @keyframes ani{
+        10% {
+            background-color: red;
+          }
+      
+          50% {
+            background-color: purple;
+          }
+      
+          100% {
+            background-color: brown;
+          }
+        }
+    
+}
