@@ -10,11 +10,11 @@ export default function Contact() {
         </p>
       </div>
       
-      <footer className="bg-black text-white text-center p-4 mt-8 relative">
+      {/* <footer className="bg-black text-white text-center p-4 mt-8 relative">
         <div className="absolute bottom-0 left-0 w-full bg-black h-12 transform rotate-180"></div>
         <p className="relative z-10">Develop By</p>
         <p className="relative z-10">Some One Anonymous</p>
-      </footer>
+      </footer> */}
     </div>
   )
 }
