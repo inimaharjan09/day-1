@@ -5,7 +5,7 @@ import Home from './pages/home/Home';
 import About from './pages/about/About';
 import Contact from './pages/contact/Contact';
 import RootLayout from './components/RootLayout';
-import NotFound from './pages/NotFound';
+
 
 export default function App() {
 
@@ -30,11 +30,7 @@ export default function App() {
 
       ]
     },
-    {
-      path: '*',
-      element: <NotFound />
-    }
-
+  
 
 
   ]);
