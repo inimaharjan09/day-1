@@ -1,10 +1,10 @@
 import React from 'react'
 import { createBrowserRouter } from 'react-router'
 import { RouterProvider } from 'react-router-dom';
-import Home from './pages/home/Home';
-import About from './pages/about/About';
-import Contact from './pages/contact/Contact';
-import RootLayout from './components/RootLayout';
+import Home from './pages/home/Home.jsx';
+import About from './pages/about/About.jsx';
+import Contact from './pages/contact/Contact.jsx';
+import RootLayout from './components/RootLayout.jsx';
 
 
 export default function App() {
