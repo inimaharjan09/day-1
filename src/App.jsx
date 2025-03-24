@@ -6,7 +6,7 @@ import About from './pages/about/About';
 import Contact from './pages/contact/Contact';
 import RootLayout from './components/RootLayout';
 import NotFound from './pages/NotFound';
-
+//jhgh
 export default function App() {
 
   const router = createBrowserRouter([
