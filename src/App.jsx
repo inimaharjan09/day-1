@@ -3,8 +3,10 @@ import { createBrowserRouter } from 'react-router'
 import { RouterProvider } from 'react-router-dom';
 import Home from './pages/home/Home.jsx';
 import About from './pages/about/About.jsx';
-import Contact from './pages/contact/Contact.jsx';
+
+
 import RootLayout from './components/RootLayout.jsx';
+import Contact1 from './pages/contact/Contact1.jsx';
 
 
 export default function App() {
@@ -25,7 +27,7 @@ export default function App() {
         },
         {
           path: 'contact',
-          element: <Contact />
+          element: <Contact1/>
         },
 
       ]

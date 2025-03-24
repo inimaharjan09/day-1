@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Contact() {
+export default function Contact1() {
   return (
     <div>
       <div className="flex-grow p-8">
@@ -18,4 +18,3 @@ export default function Contact() {
     </div>
   )
 }
-
