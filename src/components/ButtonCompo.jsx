@@ -1,19 +1,11 @@
 import React from 'react'
-import ButtonCompo from './components/ButtonCompo';
 
-export default function App() {
-  const greetEvent = (username) => {
-    alert(username);
-  }
+export default function ButtonCompo({ greetEvent }) {
   return (
-    <div className='p-5'>
-
-
-      <ButtonCompo greetEvent={greetEvent} />
-
-
-
-
+    <div>
+      <button
+        onClick={() => greetEvent('hello ram')}
+        className='bg-black text-white px-2 py-1 cursor-pointer hover:bg-gray-700'>Click TO View</button>
     </div>
   )
 }
