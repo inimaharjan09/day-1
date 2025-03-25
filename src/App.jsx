@@ -8,7 +8,7 @@ import About from './pages/about/About.jsx';
 import RootLayout from './components/RootLayout.jsx';
 import Contact1 from './pages/contact/Contact1.jsx';
 
-//somes
+
 export default function App() {
 
   const router = createBrowserRouter([
