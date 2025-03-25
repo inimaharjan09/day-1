@@ -1,30 +1,38 @@
-import React, { useState } from 'react'
+import { useState } from "react";
 
-export default function Home() {
-    // let count=0;
-    const [count, setCount] = useState(1);
+export default function CounterApp() {
+  const [count, setCount] = useState(1);
 
-    const handleIncrement =()=>{
-        // count++;
-        //count=9;
-        setCount((count) => count + 1);
-        // console.log(count);
-    };
-    const handleDecrement =()=>{
-        // count++;
-        //count=9;
-        setCount((count) => count - 1);
-        // console.log(count);
-    };
-    
-    // console.log('render');
-    // console.log(count);
+  const increment = () => setCount(Count => Count + 1);
+  const decrement = () => setCount(Count => Count - 1);
+  const reset = () => setCount(0);
+  console.log(count);
+
   return (
-    <div className='p-4 flex gap-10'>
-        <h1>{count}</h1>
-        <button onClick={handleIncrement} className='bg-black text-white px-2 py-1 cursor-pointer'>Increment</button>
-        <button onClick={handleDecrement} className='bg-black text-white px-2 py-1 cursor-pointer'>Decrement</button>
+    <div className="flex flex-col items-center p-6 bg-gray-100 min-h-screen">
+      <div className="text-3xl font-semibold mb-4">Count: {count}</div>
+      <div className="flex gap-2 mb-4">
+        <button
+          onClick={decrement}
+          className="px-4 py-2 bg-red-500 text-white disabled:bg-gray-400"
+          
+        >
+          -
+        </button>
+        <button
+          onClick={reset}
+          className="px-4 py-2 bg-gray-500 text-white"
+        >
+          Reset
+        </button>
+        <button
+          onClick={increment}
+          className="px-4 py-2 bg-green-500 text-white"
+        >
+          +
+        </button>
+      </div>
       
     </div>
-  )
+  );
 }
